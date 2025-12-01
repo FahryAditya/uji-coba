@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clover Studio Team × CloverOtaku</title>
+    <!-- <link rel="stylesheet" href="style-base.css">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-footer.css"> -->
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-icon">🍀</span>
+                    <span class="logo-text">Clover<span class="highlight">Otaku</span></span>
+                </div>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#vision" class="nav-link">Visi & Misi</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#community" class="nav-link">Community</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                    <button class="login-btn">Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <input type="text" placeholder="Cari karya, artikel, event..." class="search-input" id="searchInput">
+            <button class="search-close" id="searchClose">✕</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Home Section with Slider -->
+    <section id="home" class="hero-section">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Selamat Datang di Clover Studio!</h1>
+                        <p class="slide-desc">Komunitas kreatif anime, manga & webtoon Indonesia</p>
+                        <button class="cta-btn">Jelajahi Karya</button>
+                    </div>
+                    <div class="slide-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Event Terbaru: Anime Fest 2024</h1>
+                        <p class="slide-desc">Bergabung dengan festival anime terbesar tahun ini!</p>
+                        <button class="cta-btn">Daftar Sekarang</button>
+                    </div>
+                    <div class="slide-image" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);"></div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Karya Terbaik Bulan Ini</h1>
+                        <p class="slide-desc">Vote karya favoritmu dan menangkan hadiah!</p>
+                        <button class="cta-btn">Lihat Galeri</button>
+                    </div>
+                    <div class="slide-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                </div>
+            </div>
+            <button class="slider-nav prev" aria-label="Previous">‹</button>
+            <button class="slider-nav next" aria-label="Next">›</button>
+            <div class="slider-dots"></div>
+        </div>
+
+        <!-- Latest News -->
+        <div class="news-highlight">
+            <div class="container">
+                <h2 class="section-title">Berita Terbaru</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="news-content">
+                            <span class="news-tag">Tutorial</span>
+                            <h3>Panduan Membuat Webtoon untuk Pemula</h3>
+                            <p>Tips dan trik membuat webtoon yang menarik...</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="news-content">
+                            <span class="news-tag">Komunitas</span>
+                            <h3>Meet Up CloverOtaku Jakarta</h3>
+                            <p>Acara gathering bersama para anggota...</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="news-content">
+                            <span class="news-tag">Event</span>
+                            <h3>Kompetisi Fanart Berhadiah</h3>
+                            <p>Ikuti kompetisi dan menangkan hadiah jutaan...</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Clover Studio Team × CloverOtaku</h3>
+                    <p>Kami adalah komunitas kreatif yang berfokus pada pengembangan karya anime, manga, dan webtoon Indonesia. Didirikan oleh para enthusiast yang memiliki passion di bidang seni digital dan storytelling.</p>
+                    <p>Clover Studio Team mengkhususkan diri dalam produksi konten animasi dan ilustrasi, sementara CloverOtaku adalah wadah bagi para pecinta anime dan manga untuk berkolaborasi, berbagi karya, dan berkembang bersama.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <p>Anggota Aktif</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>200+</h4>
+                            <p>Karya Dipublikasi</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Event Terselenggara</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="section vision-section">
+        <div class="container">
+            <h2 class="section-title">Visi & Misi</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <div class="vision-icon">🎯</div>
+                    <h3>Visi</h3>
+                    <p>Menjadi komunitas kreatif terdepan di Indonesia yang menghasilkan karya anime, manga, dan webtoon berkualitas tinggi yang dapat bersaing di kancah internasional.</p>
+                </div>
+                <div class="vision-card">
+                    <div class="vision-icon">🚀</div>
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Memfasilitasi kreator untuk mengembangkan skill</li>
+                        <li>Menyediakan platform kolaborasi antar kreator</li>
+                        <li>Mengadakan event dan workshop berkualitas</li>
+                        <li>Mempromosikan karya lokal ke pasar global</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Roadmap Timeline -->
+            <div class="roadmap">
+                <h3 class="roadmap-title">Roadmap Perkembangan</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 Q1</span>
+                            <h4>Pendirian Komunitas</h4>
+                            <p>Clover Studio Team didirikan dengan 20 anggota awal</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 Q2</span>
+                            <h4>Kolaborasi CloverOtaku</h4>
+                            <p>Merger dengan CloverOtaku untuk memperluas jangkauan</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 Q1</span>
+                            <h4>Platform Online Launch</h4>
+                            <p>Peluncuran website dan sistem voting karya</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 Q1</span>
+                            <h4>Ekspansi Regional</h4>
+                            <p>Target: Event di 5 kota besar Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Galeri Karya</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="animasi">Animasi</button>
+                <button class="filter-btn" data-filter="art">Digital Art</button>
+                <button class="filter-btn" data-filter="webtoon">Webtoon</button>
+                <button class="filter-btn" data-filter="manga">Manga</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded via gallery.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section community-section">
+        <div class="container">
+            <h2 class="section-title">Komunitas</h2>
+            
+            <!-- Community Features -->
+            <div class="community-features">
+                <div class="feature-card">
+                    <h3>💬 Forum Diskusi</h3>
+                    <p>Bergabung dalam diskusi dengan sesama kreator</p>
+                    <button class="feature-btn">Buka Forum</button>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Galeri Fanart</h3>
+                    <p>Upload dan vote karya fanart favorit</p>
+                    <button class="feature-btn">Lihat Galeri</button>
+                </div>
+                <div class="feature-card">
+                    <h3>🏆 Leaderboard</h3>
+                    <p>Lihat kreator dengan karya terpopuler</p>
+                    <button class="feature-btn">Lihat Ranking</button>
+                </div>
+            </div>
+
+            <!-- Voting Section -->
+            <div class="voting-section">
+                <h3>Vote Karya Terbaik Bulan Ini</h3>
+                <div class="voting-grid" id="votingGrid">
+                    <!-- Voting items will be loaded via gallery.js -->
+                </div>
+            </div>
+
+            <!-- Active Members Badge -->
+            <div class="members-section">
+                <h3>Anggota Aktif</h3>
+                <div class="members-grid">
+                    <div class="member-badge">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">A</div>
+                        <span class="member-name">ArtistOne</span>
+                        <span class="member-level">🥇 Gold</span>
+                    </div>
+                    <div class="member-badge">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">M</div>
+                        <span class="member-name">MangaMaster</span>
+                        <span class="member-level">🥈 Silver</span>
+                    </div>
+                    <div class="member-badge">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">W</div>
+                        <span class="member-name">WebtoonPro</span>
+                        <span class="member-level">🥉 Bronze</span>
+                    </div>
+                    <div class="member-badge">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">D</div>
+                        <span class="member-name">DrawingStar</span>
+                        <span class="member-level">⭐ Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+        <div class="container">
+            <h2 class="section-title">Event & Acara</h2>
+            
+            <!-- Event Calendar -->
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav" id="prevMonth">‹</button>
+                    <h3 id="currentMonth">December 2024</h3>
+                    <button class="calendar-nav" id="nextMonth">›</button>
+                </div>
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar will be generated via events.js -->
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="upcoming-events">
+                <h3>Event Mendatang</h3>
+                <div class="events-list" id="eventsList">
+                    <!-- Events will be loaded via events.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <h2 class="section-title">Blog & Tutorial</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Tutorial</span>
+                            <span class="blog-date">1 Des 2024</span>
+                        </div>
+                        <h3>Teknik Shading Digital Art untuk Pemula</h3>
+                        <p>Pelajari teknik dasar shading untuk meningkatkan kualitas artwork digital Anda...</p>
+                        <div class="blog-footer">
+                            <span class="blog-author">By: ArtistPro</span>
+                            <button class="read-more">Baca Selengkapnya</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Behind the Scenes</span>
+                            <span class="blog-date">28 Nov 2024</span>
+                        </div>
+                        <h3>Proses Pembuatan Webtoon: Dari Ide ke Publikasi</h3>
+                        <p>Intip proses kreatif di balik pembuatan webtoon dari konsep hingga publish...</p>
+                        <div class="blog-footer">
+                            <span class="blog-author">By: WebtoonCreator</span>
+                            <button class="read-more">Baca Selengkapnya</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Berita</span>
+                            <span class="blog-date">25 Nov 2024</span>
+                        </div>
+                        <h3>Recap Event Anime Fest 2024</h3>
+                        <p>Momen seru dari event Anime Fest yang telah berlangsung minggu lalu...</p>
+                        <div class="blog-footer">
+                            <span class="blog-author">By: EventTeam</span>
+                            <button class="read-more">Baca Selengkapnya</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@cloverotaku.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>+62 812-3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Lokasi</strong>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Discord</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="faq-section">
+                        <h3>FAQ</h3>
+                        <details class="faq-item">
+                            <summary>Bagaimana cara bergabung?</summary>
+                            <p>Klik tombol Login dan buat akun baru. Verifikasi email Anda dan mulai upload karya!</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Apakah gratis?</summary>
+                            <p>Ya, semua fitur dasar gratis. Ada membership premium untuk fitur tambahan.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Bagaimana cara vote karya?</summary>
+                            <p>Login terlebih dahulu, lalu klik icon love pada karya yang Anda sukai.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Clover Studio × CloverOtaku</h4>
+                <p>Komunitas kreatif anime, manga & webtoon Indonesia</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Discord">💬</a>
+                    <a href="#" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Bantuan</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Dapatkan update terbaru langsung ke email Anda</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Email Anda" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Clover Studio Team × CloverOtaku. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Project Preview -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Popup -->
+    <div class="notification" id="notification">
+        <span class="notification-icon">🔔</span>
+        <span class="notification-message"></span>
+        <button class="notification-close">✕</button>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content login-modal">
+            <button class="modal-close" id="loginClose">✕</button>
+            <div class="login-container">
+                <h2>Welcome Back!</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <p class="form-footer">Belum punya akun? <a href="#" id="showRegister">Daftar</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script>
+    <script src="slider.js"></script>
+    <script src="gallery.js"></script>
+    <script src="events.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>
